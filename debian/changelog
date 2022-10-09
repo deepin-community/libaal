@@ -1,0 +1,178 @@
+libaal (1.0.7-1) unstable; urgency=medium
+
+  * New upstream release. 
+  * Refresh patches.
+  * Drop unnecassary build dependency on dh-autoreconf.
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Mon, 27 Nov 2017 10:05:00 +0100
+
+libaal (1.0.6-4) unstable; urgency=medium
+
+  * Update to policy 4.1.1
+    - Change priority to optional.
+  * Add patch by Mathias Klose to fix build failures with glibc 2.26.
+    (Closes: #878213) 
+  * Update to debhelper compat level 10.
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Wed, 11 Oct 2017 09:30:50 +0200
+
+libaal (1.0.6-3) unstable; urgency=medium
+
+  * Really compile with -fPIC. Patch by Radovan Birdic. (Closes: #844736)
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Fri, 18 Nov 2016 16:20:59 +0100
+
+libaal (1.0.6-2) unstable; urgency=medium
+
+  * Compile with -fPIC to fix build failure on reiser4progs.
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Fri, 21 Oct 2016 16:37:04 +0200
+
+libaal (1.0.6-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Sat, 02 Aug 2014 14:45:42 +0200
+
+libaal (1.0.5-6) unstable; urgency=low
+
+  * Convert to source format 3.0 (quilt).
+  * debian/patches/bitops.c.diff: Make the bit_t change from Luk a patch
+    file.
+  * Remove DMUA field.
+  * Update to debhelper compat level 9.
+  * Update to policy 3.9.5.
+  * Add a ${misc:Depends} to libaal-dev.
+  * Switch rules file to use dh command.
+    - Use dh_autoreconf to update libtool and conig,{sub,guess} at
+      build time. (Closes: #700357)
+  * Update watch file.
+  * Build and ship the shared library.
+  * Set homepage to the sourceforge project page.
+  * Update description of libaal-dev.
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Sat, 04 Jan 2014 12:26:24 +0100
+
+libaal (1.0.5-5.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Use bit_t instead of int (Closes: #632632).
+
+ -- Luk Claes <luk@debian.org>  Tue, 03 Jul 2012 00:31:28 +0000
+
+libaal (1.0.5-5) unstable; urgency=low
+
+  * Remove libaal.la and libaal-minimal.la.
+  * Add a Breaks: libreiser4-dev (<< 1.0.7-3).
+  * Update Standards-Version to 3.8.3.
+  * Use debhelper compat level 7.
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Wed, 26 Aug 2009 17:40:05 +0200
+
+libaal (1.0.5-4) unstable; urgency=low
+
+  * New maintainer (Closes: #483026)
+  * Add a debian/watch file.
+  * Change download url in debian/copyright to the kernel.org one.
+
+ -- Felix Zielcke <fzielcke@z-51.de>  Mon, 09 Feb 2009 16:49:08 +0100
+
+libaal (1.0.5-3) unstable; urgency=low
+
+  * QA upload.
+    + Set maintainer to Debian QA Group <packages@qa.debian.org>.
+  * Remove dead Homepage URL from package description.
+  * Make clean not ignore errors.
+  * Add appropriate Copyright holder to debian/copyright.
+  * Bump debhelper build-dep and compat to 5.
+  * Bump Standards Version to 3.8.0.
+
+ -- Barry deFreese <bdefreese@debian.org>  Fri, 06 Feb 2009 18:07:02 -0500
+
+libaal (1.0.5-2) unstable; urgency=low
+
+  * Minimal library (required to add reiser4 support to grub) is now
+    built using --enable-libminimal configure switch.
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 29 Sep 2006 09:01:55 +0200
+
+libaal (1.0.5-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Thu, 18 Aug 2005 12:46:56 +0200
+
+libaal (1.0.4-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 25 Feb 2005 18:50:30 +0100
+
+libaal (1.0.3-2) unstable; urgency=low
+
+  * Applied patch provided by Vitaly Fertman in bug report #289747.
+
+ -- Domenico Andreoli <cavok@debian.org>  Thu, 20 Jan 2005 12:49:34 +0100
+
+libaal (1.0.3-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Thu,  9 Dec 2004 14:53:10 +0100
+
+libaal (1.0.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added watch file. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 19 Nov 2004 11:38:33 +0100
+
+libaal (1.0.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 13 Aug 2004 16:43:02 +0200
+
+libaal (0.5.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Domenico Andreoli <cavok@debian.org>  Wed,  4 Aug 2004 23:06:10 +0200
+
+libaal (0.5.2-1) experimental; urgency=low
+
+  * New upstream (testing) release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Wed, 16 Jun 2004 21:58:47 +0200
+
+libaal (0.5.1-3) experimental; urgency=low
+
+  * Enabled memory manager in stand alone library. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 23 Apr 2004 02:18:05 +0200
+
+libaal (0.5.1-2) experimental; urgency=low
+
+  * Stand alone library is now installed by libaal-dev. It is useful
+    to build support in tools such as grub.
+
+ -- Domenico Andreoli <cavok@debian.org>  Thu, 22 Apr 2004 13:52:30 +0200
+
+libaal (0.5.1-1) experimental; urgency=low
+
+  * New upstream (testing) version. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Wed, 21 Apr 2004 15:10:21 +0200
+
+libaal (0.5.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * No shared libraries are provided at the moment.
+
+ -- Domenico Andreoli <cavok@debian.org>  Sat, 28 Feb 2004 16:53:28 +0100
+
+libaal (0.4.15-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Domenico Andreoli <cavok@debian.org>  Sat, 20 Dec 2003 17:01:59 +0100

@@ -1,0 +1,20 @@
+Source: libaal
+Section: libs
+Priority: optional
+Maintainer: Felix Zielcke <fzielcke@z-51.de>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.1
+Homepage: http://sourceforge.net/projects/reiser4/
+
+Package: libaal-dev
+Section: libdevel
+Architecture: any
+Multi-arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: libc6-dev | libc-dev, ${misc:Depends}
+Breaks: libreiser4-dev (<< 1.0.7-3)
+Description: Reiser4's application abstraction library: Development files
+ These are the development files for libaal.
+ .
+ They are part of the Reiser4's filesystem support tools.
+

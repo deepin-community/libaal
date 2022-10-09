@@ -1,0 +1,3 @@
+version=3
+#ftp://ftp.kernel.org/pub/linux/utils/fs/reiser4/libaal/libaal-([0-9.]+).tar.gz debian uupdate
+http://sf.net/reiser4/libaal-(.+)\.tar\.gz
